@@ -22,6 +22,9 @@ plugins:
   - jekyll-target-blank
   - jekyll-sitemap
 
+sass:
+  style: compressed
+
 target-blank:
     noopener: false
     noreferrer: false
