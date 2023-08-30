@@ -16,7 +16,7 @@ body {
     border-radius: 10px;
     width: calc(100% - 80px);
     max-width: 1000px;
-    text-shadow: 0 2px 4px #FFF;
+    text-shadow: 0 2px 0 #FFF;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0),
                                        rgba(255, 255, 255, 255),
                                        rgba(255, 255, 255, 255),
@@ -25,7 +25,6 @@ body {
 
 h1, h2 {
     margin: 20px 0;
-    text-align: center;
     line-height: 1em;
 }
 
@@ -57,16 +56,23 @@ ul, ol {
 
 li { line-height: 1.5em }
 
-pre, code { font-family: 'DM Mono', monospace; }
+pre, code { font-family: 'DM Mono', monospace }
 
 pre {
     max-width: 100%;
     overflow: auto hidden;
 }
 
-footer { 
-    text-align: center;
-    font-size: 0;
-}
+code:not(pre>code) { word-break: break-all }
 
-footer img { margin: 0 5px }
+footer { text-align: center }
+
+#footer-badges { font-size: 0 }
+
+#footer-badges .badge { margin: 5px }
+
+#footer-text {
+    font-size: .8em;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+}

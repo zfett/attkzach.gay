@@ -3,7 +3,7 @@ title: ZachFetters.com
 layout: default
 permalink: /
 ---
-Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd. This website used to hold blog posts but I rarely have time to make them and social media does good enough to host my thoughts, so now it's an info-dump. Use this site to learn more about me, my projects, and where you can find me on the Net! As a note, this site collects no analytics of any kind, nor does it require JavaScript. It was made using Jekyll, HTML, CSS, and is currently hosted on Netlify, although I have future plans to host it locally.
+Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd. This website used to hold blog posts but I rarely have time to make them and social media does good enough to host my thoughts, so now it's an info-dump. Use this site to learn more about me, my projects, and where you can find me on the Net! As a note, this site collects no analytics of any kind, nor does it require JavaScript. It was made using Jekyll, HTML, CSS, and is currently hosted on my home server running Ubuntu Server 22.04 LTS, using nginx and proxied through Cloudflare.
 
 ***
 
