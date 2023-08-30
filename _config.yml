@@ -1,0 +1,84 @@
+title: "ZachFetters.com"
+author:
+  name: "Zach Fetters"
+  email: "me@zachfetters.com"
+description: Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd.
+
+baseurl: ""
+url: "https://zachfetters.com"
+
+safe: false
+disable_disk_cache: true
+timezone: "America/New_York"
+encoding: "utf-8"
+future: false
+show_drafts: false
+unpublished: false
+incremental: false
+highlighter: none
+
+plugins:
+  - jekyll-feed
+  - jekyll-target-blank
+  - jekyll-sitemap
+
+target-blank:
+    noopener: false
+    noreferrer: false
+
+kramdown:
+    syntax_highlighter_opts:
+      disable: true
+
+feed:
+  path: "/feed.xml"
+
+include: ["_pages", "project"]
+
+exclude: [
+  "gemfile",
+  "Gemfile.lock",
+  "netlify.toml",
+  "package.json",
+  "package-lock.json",
+  ".gitattributes",
+  ".gitignore",
+  "_config.yml"
+]
+
+archive_path: archive/
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "admin"
+    values:
+      sitemap: false
+  - scope:
+      path: "node_modules"
+    values:
+      sitemap: false
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: default
+      site-nav: true
+      permalink: /:basename/
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: "Zach Fetters"
+      categories: post
+      permalink: /:categories/:year/:month/:day/:title/
+  - scope:
+      path: "project/"
+      type: "pages"
+    values:
+      layout: project
+      site-nav: false

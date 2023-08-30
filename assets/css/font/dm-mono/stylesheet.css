@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-MediumItalic.eot');
+    src: local('DM Mono Medium Italic'), local('DMMono-MediumItalic'),
+        url('subset-DMMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-MediumItalic.woff2') format('woff2'),
+        url('subset-DMMono-MediumItalic.woff') format('woff'),
+        url('subset-DMMono-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-Light.eot');
+    src: local('DM Mono Light'), local('DMMono-Light'),
+        url('subset-DMMono-Light.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-Light.woff2') format('woff2'),
+        url('subset-DMMono-Light.woff') format('woff'),
+        url('subset-DMMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-Italic.eot');
+    src: local('DM Mono Italic'), local('DMMono-Italic'),
+        url('subset-DMMono-Italic.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-Italic.woff2') format('woff2'),
+        url('subset-DMMono-Italic.woff') format('woff'),
+        url('subset-DMMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-Medium.eot');
+    src: local('DM Mono Medium'), local('DMMono-Medium'),
+        url('subset-DMMono-Medium.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-Medium.woff2') format('woff2'),
+        url('subset-DMMono-Medium.woff') format('woff'),
+        url('subset-DMMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-LightItalic.eot');
+    src: local('DM Mono Light Italic'), local('DMMono-LightItalic'),
+        url('subset-DMMono-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-LightItalic.woff2') format('woff2'),
+        url('subset-DMMono-LightItalic.woff') format('woff'),
+        url('subset-DMMono-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('subset-DMMono-Regular.eot');
+    src: local('DM Mono Regular'), local('DMMono-Regular'),
+        url('subset-DMMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('subset-DMMono-Regular.woff2') format('woff2'),
+        url('subset-DMMono-Regular.woff') format('woff'),
+        url('subset-DMMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

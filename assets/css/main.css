@@ -1,0 +1,70 @@
+@import url("/assets/css/font/inter/stylesheet.css"); /*Inter*/
+@import url("/assets/css/font/dm-mono/stylesheet.css"); /*DM Mono*/
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    background: #FFF url("/assets/img/page-bg.webp") no-repeat fixed bottom left/auto;
+    color: #000;
+}
+
+body {
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: calc(100% - 80px);
+    max-width: 1000px;
+    text-shadow: 0 2px 4px #FFF;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0),
+                                       rgba(255, 255, 255, 255),
+                                       rgba(255, 255, 255, 255),
+                                       rgba(255, 255, 255, 0));
+}
+
+h1, h2 {
+    margin: 20px 0;
+    text-align: center;
+    line-height: 1em;
+}
+
+p {
+    line-height: 1.5em;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #B23;
+}
+
+hr {
+    border: 0;
+    width: 100%;
+    height: 1px;
+    background: #DDD;
+    border: 0;
+    margin: 40px 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0 20px;
+}
+
+li { line-height: 1.5em }
+
+pre, code { font-family: 'DM Mono', monospace; }
+
+pre {
+    max-width: 100%;
+    overflow: auto hidden;
+}
+
+footer { 
+    text-align: center;
+    font-size: 0;
+}
+
+footer img { margin: 0 5px }
