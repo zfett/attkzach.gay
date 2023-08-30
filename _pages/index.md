@@ -38,7 +38,7 @@ Please note that I am not known for finishing projects, so don't get too attache
 - **[AudiLog](https://git.zachfetters.com/zach/AudiLog):** Digital audio catalog dashboard for labels and musicians. Made with Next.js.
 
 ***
-
+<!--sse-->
 ## Get in touch
 I can be reached via email at `me@zachfetters.com` or via the following sites:
 
@@ -114,3 +114,4 @@ Bg==
 =LDWJ
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+<!--/sse-->
