@@ -6,7 +6,7 @@
 html {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    background: #FFF url("/assets/img/page-bg.webp") no-repeat fixed bottom left/auto;
+    background: #FFF url("/assets/img/page-bg.webp") bottom left no-repeat fixed;
     color: #000;
 }
 
@@ -17,10 +17,8 @@ body {
     width: calc(100% - 80px);
     max-width: 1000px;
     text-shadow: 0 2px 0 #FFF;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0),
-                                       rgba(255, 255, 255, 255),
-                                       rgba(255, 255, 255, 255),
-                                       rgba(255, 255, 255, 0));
+    background: #FFFC;
+    box-shadow: 0 0 50px 50px #FFFC;
 }
 
 h1, h2 {
