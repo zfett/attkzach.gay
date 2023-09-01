@@ -35,7 +35,7 @@ Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphi
 Please note that I am not known for finishing projects, so don't get too attached to anything you see.
 
 ### Current Projects
-- **[AudiLog](https://git.zachfetters.com/zach/AudiLog):** Digital audio catalog dashboard for labels and musicians. Made with Next.js.
+- **[AudiLog](https://git.zachfetters.com/AudiLog/AudiLog):** Digital audio catalog dashboard for labels and musicians. Made with Next.js.
 
 ***
 <!--sse-->
