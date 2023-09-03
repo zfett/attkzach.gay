@@ -51,6 +51,9 @@ Here's the other places I'm at on the Net:
 - **[SoundCloud](https://soundcloud.com/DESCENTRATE)**
 - **[YouTube](https://youtube.com/@attkzach)**
 
+### Resume
+Here's a [download link](/assets/files/ZachFetters_Resume_Sept2023_Color_REDACTED.pdf){:target="_blank"} to my current resume. If you want an unredacted version, please get in touch using the details above.
+
 ### PGP Keys
 
 #### Zachary Fetters \<me@zachfetters.com\>
