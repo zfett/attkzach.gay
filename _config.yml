@@ -36,7 +36,7 @@ kramdown:
 feed:
   path: "/feed.xml"
 
-include: ["_pages", "project"]
+include: ["_pages"]
 
 exclude: [
   "gemfile",
@@ -46,7 +46,9 @@ exclude: [
   "package-lock.json",
   ".gitattributes",
   ".gitignore",
-  "_config.yml"
+  "_config.yml",
+  "LICENSE",
+  "README.md"
 ]
 
 archive_path: archive/
