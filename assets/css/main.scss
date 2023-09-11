@@ -44,9 +44,10 @@ a {
     color: #B23;
 }
 
+a:hover { color: #712; }
+
 a[target="_blank"]::after {
     content: "↗";
-    display: inline;
     vertical-align: super;
     opacity: .75;
 }
