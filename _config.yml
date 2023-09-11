@@ -1,4 +1,4 @@
-title: "ZachFetters.com"
+title: "Zach Fetters"
 author:
   name: "Zach Fetters"
   email: "me@zachfetters.com"
@@ -33,13 +33,10 @@ kramdown:
     syntax_highlighter_opts:
       disable: true
 
-feed:
-  path: "/feed.xml"
-
 include: ["_pages"]
 
 exclude: [
-  "gemfile",
+  "Gemfile",
   "Gemfile.lock",
   "netlify.toml",
   "package.json",
@@ -48,7 +45,8 @@ exclude: [
   ".gitignore",
   "_config.yml",
   "LICENSE",
-  "README.md"
+  "README.md",
+  "build.sh"
 ]
 
 archive_path: archive/

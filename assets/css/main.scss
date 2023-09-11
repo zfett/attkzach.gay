@@ -3,6 +3,12 @@
 @import url("/assets/css/font/inter/stylesheet.css"); /*Inter*/
 @import url("/assets/css/font/dm-mono/stylesheet.css"); /*DM Mono*/
 
+::selection {
+    background: #B23;
+    color: #FFF;
+    text-shadow: 0 0 0 transparent;
+}
+
 html {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -15,8 +21,8 @@ body {
     padding: 40px 20px;
     border-radius: 10px;
     width: calc(100% - 80px);
-    max-width: 1000px;
-    text-shadow: 0 2px 0 #FFF;
+    max-width: 700px;
+    text-shadow: 0 1px 0 #FFF;
     background: #FFFC;
     box-shadow: 0 0 50px 50px #FFFC;
 }
@@ -27,7 +33,7 @@ h1, h2 {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 2em;
     margin: 20px 0;
     text-align: justify;
 }
@@ -36,6 +42,13 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: #B23;
+}
+
+a[target="_blank"]::after {
+    content: "↗";
+    display: inline;
+    vertical-align: super;
+    opacity: .75;
 }
 
 hr {
@@ -52,7 +65,7 @@ ul, ol {
     padding: 0 20px;
 }
 
-li { line-height: 1.5em }
+li { line-height: 2em }
 
 pre, code { font-family: 'DM Mono', monospace }
 
