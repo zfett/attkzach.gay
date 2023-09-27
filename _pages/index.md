@@ -30,7 +30,13 @@ Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphi
 Please note that I am not known for finishing projects, so don't get too attached to anything you see.
 
 ### Current Projects
-- [AudiLog](https://git.zachfetters.com/AudiLog/AudiLog): Digital audio catalog software for labels and musicians.
+{% for project in site.data.projects %}
+{% if project.wip == true %}
+- <sup><abbr title="Work In Progress">WIP</abbr></sup>[{{ project.name }}]({{ project.url }}): {{ project.description }}
+{% else %}
+- [{{ project.name }}]({{ project.url }}): {{ project.description }}
+{% endif %}
+{% endfor %}
 
 ***
 <!--sse-->
