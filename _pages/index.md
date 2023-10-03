@@ -38,10 +38,11 @@ Please note that I am not known for finishing projects, so don't get too attache
 {% endif %}
 {% endfor %}
 
-***
 <!--sse-->
+***
+
 ## Get in touch
-I can be reached via email at `me@zachfetters.com` or via the following sites:
+I can be reached via email at `zachfett@protonmail.com` or via the following sites:
 
 - [Fediverse (@attkzach@wetdry.world)](https://wetdry.world/@attkzach){:rel="me"}
 - [Instagram](https://www.instagram.com/zachfetters/)
@@ -55,19 +56,42 @@ Here's the other places I'm at on the Net:
 ### Resume
 Here's a [download link](/assets/files/ZachFetters_Resume_Sept2023_Color_REDACTED.pdf) to my current resume. If you want an unredacted version, please get in touch using the details above.
 
-### PGP Keys
-#### Zachary Fetters \<me@zachfetters.com\>
-Fingerprint: `56CD158639E5767872F4E342AF90B988AB97ED96`
+### PGP Key
+#### Zachary Fetters \<zachfett@protonmail.com\>
+Fingerprint: `034065C9ECAA2D10D40CAD90AA0CF5D405E30EE2`
 
-[Keyoxide](https://keyoxide.org/56CD158639E5767872F4E342AF90B988AB97ED96)  
-[OpenPGP Keyserver](https://keys.openpgp.org/vks/v1/by-fingerprint/56CD158639E5767872F4E342AF90B988AB97ED96)  
-[Download .asc pubkey](/assets/files/me@zachfetters.com_Zachary_Fetters.asc)  
+```plaintext
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID:   Zachary Fetters <zachfett@protonmail.com>
+Comment: Valid from:    9/18/2022 11:26 AM
+Comment: Type:  255-bit EdDSA (secret key available)
+Comment: Usage: Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint:   034065C9ECAA2D10D40CAD90AA0CF5D405E30EE2
 
-#### Zachary Fetters (Git Signing Key) \<zachfett@protonmail.com\>
-_(Note: I only use this key to sign my git commits, not for communication.)_
 
-Fingerprint: `DD86FE6C1975B36C4D81FEF9A3C0FAD652FE668B`
+mDMEYyc4kBYJKwYBBAHaRw8BAQdAbXD9CQi5/FJb7tuRCNOJ83YsRYBsNzbw3WZB
+ZhTgoza0MXphY2hmZXR0QHByb3Rvbm1haWwuY29tIDx6YWNoZmV0dEBwcm90b25t
+YWlsLmNvbT6IeAQwFgoAIBYhBANAZcnsqi0Q1AytkKoM9dQF4w7iBQJlG21SAh0g
+AAoJEKoM9dQF4w7iawgA/2Wv6jShVSTbThskeD2EK1jRcKa37KskEZTHoWWXoeq5
+AP96Gg003Tzbk/zSODrAnowY9cPFenkEDudKAfWX9EMOCoiJBBAWCgAxBAsJBwgD
+FQgKBBYAAgECGwMCHgEWIQQDQGXJ7KotENQMrZCqDPXUBeMO4gUCZRttSgAKCRCq
+DPXUBeMO4scnAP9qgOLEvFPRwwC5P3TbElRhmzjLPr5t41KlLHczGHlXLwD/Qrlv
+bdoq44oQWSGka8d74t2CpUmkZH5IhEbGbHtVwAaIjAQQFgoAHQUCYyc4kAQLCQcI
+AxUICgQWAAIBAhkBAhsDAh4BACEJEKoM9dQF4w7iFiEEA0BlyeyqLRDUDK2Qqgz1
+1AXjDuJIgAEAxEn4q7QRHEtFmy/sD+wZxfT/TmbVwqptaBTRbND79qwA/i3ZnnRW
+RhP5WQBUIffynuvyi27AuCs/jg1ZtvuPB2wPtClaYWNoYXJ5IEZldHRlcnMgPHph
+Y2hmZXR0QHByb3Rvbm1haWwuY29tPoiWBBMWCgA+AhsDBQsJCAcCAiICBhUKCQgL
+AgQWAgMBAh4HAheAFiEEA0BlyeyqLRDUDK2Qqgz11AXjDuIFAmUbbUoCGQEACgkQ
+qgz11AXjDuK11gEA/6+4Qe5kCR7SUX2ki/hnTGnvAUtMN/ib7u9isBxaHXYBAJY+
+RnniMOub9j7MoQsVg1IPovJBwet36e8s9hc2FAQDuDgEYyc4kBIKKwYBBAGXVQEF
+AQEHQEXyhxB2emgnPS/fB+UZb/5bZTpEg5K7KMOXUH1UTHk3AwEIB4h4BBgWCAAJ
+BQJjJziQAhsMACEJEKoM9dQF4w7iFiEEA0BlyeyqLRDUDK2Qqgz11AXjDuL+iwEA
+yfyfcZJBpWFuRlyexpp1mYvFbtEZ8AWf0aQbYqfDFQ8A/REROqkC6M4TbWOCUO02
++5WNnQ63Yd1g1mtSP+lhPf4M
+=Vg3m
+-----END PGP PUBLIC KEY BLOCK-----
 
-[OpenPGP Keyserver](https://keys.openpgp.org/vks/v1/by-fingerprint/DD86FE6C1975B36C4D81FEF9A3C0FAD652FE668B)  
-[Download .asc pubkey](/assets/files/zachfett@protonmail.com_Git_Signing_Key.asc)  
+```
+[Download pubkey from keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/034065C9ECAA2D10D40CAD90AA0CF5D405E30EE2)  
+[Download .asc pubkey](/assets/files/publickey.zachfett@protonmail.com-034065c9ecaa2d10d40cad90aa0cf5d405e30ee2.asc)
 <!--/sse-->

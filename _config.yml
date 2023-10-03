@@ -1,7 +1,7 @@
 title: "Zach Fetters"
 author:
   name: "Zach Fetters"
-  email: "me@zachfetters.com"
+  email: "zachfett@protonmail.com"
 description: Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd.
 
 baseurl: ""
@@ -49,19 +49,9 @@ exclude: [
   "build.sh"
 ]
 
-archive_path: archive/
-
 defaults:
   - scope:
       path: "assets"
-    values:
-      sitemap: false
-  - scope:
-      path: "admin"
-    values:
-      sitemap: false
-  - scope:
-      path: "node_modules"
     values:
       sitemap: false
   - scope:
@@ -71,17 +61,3 @@ defaults:
       layout: default
       site-nav: true
       permalink: /:basename/
-  - scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: post
-      author: "Zach Fetters"
-      categories: post
-      permalink: /:categories/:year/:month/:day/:title/
-  - scope:
-      path: "project/"
-      type: "pages"
-    values:
-      layout: project
-      site-nav: false

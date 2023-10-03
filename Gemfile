@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem "jekyll-feed"
+  gem "jekyll-sitemap"
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
@@ -18,5 +19,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'jekyll-target-blank'
 
 gem 'kramdown-parser-gfm'
-
-gem 'jekyll-sitemap'

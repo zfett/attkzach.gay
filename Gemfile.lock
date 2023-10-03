@@ -27,7 +27,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.15.1)
+    jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -82,7 +82,7 @@ PLATFORMS
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
-  jekyll-feed (~> 0.12)
+  jekyll-feed
   jekyll-sitemap
   jekyll-target-blank
   kramdown-parser-gfm
