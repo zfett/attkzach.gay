@@ -1,4 +1,23 @@
-- name: "AdventureEngine"
-  url: "https://git.zachfetters.com/zach/AdventureEngine"
-  description: "A text-based adventure game engine written in C++."
-  wip: true
+- name: "attkzach.gay"
+  url: "https://git.attkzach.gay/zach/attkzach.gay"
+  description: "Source code for my personal website. Made with Jekyll and good ol' HTML/CSS. Site uses no JavaScript."
+  wip: false
+  archived: false
+
+- name: "PCC"
+  url: "https://git.attkzach.gay/zach/PCC"
+  description: "The Pixel Color Cipher is a method for encoding text or hexadecimal data in an image block."
+  wip: false
+  archived: true
+
+- name: "mico"
+  url: "https://git.attkzach.gay/zach/mico"
+  description: "a minimalist and comfy Jekyll theme, built for GitHub Pages."
+  wip: false
+  archived: true
+
+- name: "CryptoCam"
+  url: "https://git.attkzach.gay/zach/CryptoCam"
+  description: "Generate pseudo-random values using live camera input."
+  wip: false
+  archived: true

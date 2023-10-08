@@ -36,6 +36,8 @@ body {
     text-shadow: 0 0 0 transparent;
 }
 
+sup { font-size: .8em; }
+
 abbr { cursor: help; }
 
 h1, h2 {
@@ -98,4 +100,25 @@ footer { text-align: center }
     font-size: .8em;
     text-align: center;
     font-family: 'DM Mono', monospace;
+}
+
+.project-tag {
+    margin: 0 5px 0 0;
+    font-size: .8em;
+    line-height: 1em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.project-tag.archived {
+    border: 1px solid #bbb;
+    background: #ddd;
+    color: #000;
+}
+
+.project-tag.wip {
+    border: 1px solid #CA4;
+    background: #FC6;
+    color: #000;
 }
