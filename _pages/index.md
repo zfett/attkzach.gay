@@ -18,7 +18,10 @@ Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphi
         - Jekyll
     - Graphic Design
         - Adobe Photoshop
-    - Fediverse
+        - Adobe Illustrator
+    - Video Editing
+        - Adobe After Effects
+        - Adobe Premiere
     - Music
         - Electronic music & production
 
@@ -33,16 +36,21 @@ Please note that I am not known for finishing projects, so don't get too attache
 {% unless site.data.projects %}
 _No active projects :(_
 {% endunless %}
-{% if project.wip == true %}
-- <span class="project-tag wip"><abbr title="Work In Progress">WIP</abbr></span>[{{ project.name }}]({{ project.url }}): {{ project.description }}
-{% elsif project.archived == true %}
-- <span class="project-tag archived">Archived</span>[{{ project.name }}]({{ project.url }}): {{ project.description }}
-{% else %}
-- [{{ project.name }}]({{ project.url }}): {{ project.description }}
-{% endif %}
+- {% if project.wip == true %}<span class="project-tag wip"><abbr title="Work In Progress">WIP</abbr></span>{% endif %}{% if project.archived == true %}<span class="project-tag archived" title="This project is no longer maintained">Archived</span>{% endif %}[{{ project.name }}]({{ project.url }}): {{ project.description }}
 {% endfor %}
 
 ***
+
+## Services
+I run a multitude of services on my home server, some of which are publicly accessible. Below is a list of the public services I run and how to access them (if possible):
+
+- **[Website](https://attkzach.gay/)**: My personal static website. You're on it now!
+- **[Status Page](https://status.attkzach.gay/)**: My server status dashboard, powered by [Uptime Kuma](https://uptime.kuma.pet/).
+- **[Gitea](https://git.attkzach.gay/)**: Where I host my git repos. Running on Gitea. Get in contact with me to make an account.
+- **[Java Minecraft Server](https://mc.attkzach.gay/)**: When accessed from the web, shows how to connect to the server. Requires a whitelist entry to play.
+- **[Pastebin](https://bin.attkzach.gay/)**: My personal pastebin. Enter your text and click the pencil icon to share it. Running on [bin by w4 on GitHub](https://github.com/w4/bin).
+
+All of my services run on subdomains of my main domain, `*.attkzach.gay`. Anything running under my name elsewhere is _probably_ not mine and could be dangerous.
 
 ## Get in touch
 I can be reached via email at `attkzach@pm.me` or via the following sites:
