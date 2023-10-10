@@ -36,7 +36,7 @@ Please note that I am not known for finishing projects, so don't get too attache
 {% unless site.data.projects %}
 _No active projects :(_
 {% endunless %}
-- {% if project.wip == true %}<span class="project-tag wip"><abbr title="Work In Progress">WIP</abbr></span>{% endif %}{% if project.archived == true %}<span class="project-tag archived" title="This project is no longer maintained">Archived</span>{% endif %}[{{ project.name }}]({{ project.url }}): {{ project.description }}
+- {% if project.wip == true %}<span class="project-tag wip"><i><abbr title="Work In Progress">WIP</abbr></i></span> {% endif %}{% if project.archived == true %}<span class="project-tag archived" title="This project is no longer maintained"><i>Archived</i></span> {% endif %}[{{ project.name }}]({{ project.url }}): {{ project.description }}
 {% endfor %}
 
 ***

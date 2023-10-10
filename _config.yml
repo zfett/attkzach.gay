@@ -6,6 +6,7 @@ description: Welcome to my website, my name is Zachary! I am a hobbyist web deve
 
 baseurl: ""
 url: "https://attkzach.gay"
+prettyurl: "attkzach.gay"
 
 safe: false
 disable_disk_cache: true

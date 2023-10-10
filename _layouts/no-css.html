@@ -3,7 +3,7 @@ layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en-US">
-    {% include head.html %}
+    {% include head.html no-style=true %}
     <body>
         <main>
             <noscript><p id="noscript">JavaScript is disabled! Luckily for you, this site doesn't need it!</p></noscript>
@@ -12,9 +12,9 @@ layout: compress
             {% else %}
             <h1 id="page-title">{{ page.title }}</h1>
             {% endif %}
-            {{ content }}
+            {{ content | slice: 78, 999999 }}
         </main>
         <hr>
-        {% include footer.html %}
+        {% include footer.html no-style=true %}
     </body>
 </html>
