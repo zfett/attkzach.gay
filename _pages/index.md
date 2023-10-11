@@ -55,7 +55,7 @@ All of my services run on subdomains of my main domain, `*.attkzach.gay`. Anythi
 ## Get in touch
 I can be reached via email at `attkzach@pm.me` or via the following sites:
 
-- [Fediverse (@attkzach@wetdry.world)](https://wetdry.world/@attkzach){:rel="me"}
+- [Fediverse (@attkzach@wetdry.world)](https://wetdry.world/@attkzach){:rel="external nofollow noopener me"}
 
 Here's the other places I'm at on the Net:
 

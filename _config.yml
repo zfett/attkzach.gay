@@ -20,15 +20,16 @@ highlighter: none
 
 plugins:
   - jekyll-feed
-  - jekyll-target-blank
   - jekyll-sitemap
+  - jekyll-link-attributes
 
 sass:
   style: compressed
 
-target-blank:
-    noopener: false
-    noreferrer: false
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
 
 kramdown:
     syntax_highlighter_opts:
