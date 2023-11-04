@@ -45,21 +45,19 @@ _No active projects :(_
 I run a multitude of services on my home server, some of which are publicly accessible. Below is a list of the public services I run and how to access them (if possible):
 
 - **[Website](https://attkzach.gay/)**: My personal static website. You're on it now!
-- **[Status Page](https://status.attkzach.gay/)**: My server status dashboard, powered by [Uptime Kuma](https://uptime.kuma.pet/).
 - **[Gitea](https://git.attkzach.gay/)**: Where I host my git repos. Running on Gitea. Get in contact with me to make an account.
-- **[Java Minecraft Server](https://mc.attkzach.gay/)**: When accessed from the web, shows how to connect to the server. Requires a whitelist entry to play.
 - **[Pastebin](https://bin.attkzach.gay/)**: My personal pastebin. Enter your text and click the pencil icon to share it. Running on [bin by w4 on GitHub](https://github.com/w4/bin).
 
 All of my services run on subdomains of my main domain, `*.attkzach.gay`. Anything running under my name elsewhere is _probably_ not mine and could be dangerous.
 
 ## Get in touch
-I can be reached via email at `attkzach@pm.me` or via the following sites:
+I can be reached via email at `hey@attkzach.gay` or via the following sites:
 
 - [Fediverse (@attkzach@wetdry.world)](https://wetdry.world/@attkzach){:rel="external nofollow noopener me"}
 
 Here's the other places I'm at on the Net:
 
 - [Git Server](https://git.attkzach.gay)
-- [SoundCloud](https://soundcloud.com/DESCENTRATE)
+- [SoundCloud](https://soundcloud.com/attkzach)
 - [YouTube](https://youtube.com/@attkzach)
 - [Twitch](https://twitch.tv/attkzach_ttv)

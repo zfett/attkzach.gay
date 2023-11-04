@@ -1,0 +1,35 @@
+---
+---
+@import url("https://use.typekit.net/xxx2kbh.css");
+
+body {
+    margin: 0 auto;
+    background: url("/assets/img/project/housetohome/Page_Background.webp") #dffee3;
+    color: #161c1f;
+    font-family: "sofia-pro-soft", sans-serif;
+}
+
+main {
+    max-width: 1120px;
+    min-height: calc(100vh - 80px);
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(223, 254, 227, .75);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .1);
+}
+
+#game_logo {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+#game_logo img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
