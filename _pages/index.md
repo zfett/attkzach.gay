@@ -4,7 +4,7 @@ page-title: attkzach
 layout: default
 permalink: /
 ---
-Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd. This website used to hold blog posts but I rarely have time to make them and social media does good enough to host my thoughts, so now it's an info-dump. Use this site to learn more about me, my projects, and where you can find me on the Net! As a note, this site collects no analytics of any kind, nor does it require JavaScript. It was made using Jekyll, HTML, CSS, and is currently hosted on my home server running Ubuntu Server 22.04 LTS, using nginx and proxied through Cloudflare.
+Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd. This website used to hold blog posts but I rarely have time to make them and social media does good enough to host my thoughts, so now it's an info-dump. Use this site to learn more about me, my projects, and where you can find me on the Net! As a note, this site collects no analytics of any kind, nor does it require JavaScript. It was made using Jekyll, HTML, and CSS.
 
 ***
 
@@ -41,15 +41,6 @@ _No active projects :(_
 
 ***
 
-## Services
-I run a multitude of services on my home server, some of which are publicly accessible. Below is a list of the public services I run and how to access them (if possible):
-
-- **[Website](https://attkzach.gay/)**: My personal static website. You're on it now!
-- **[Gitea](https://git.attkzach.gay/)**: Where I host my git repos. Running on Gitea. Get in contact with me to make an account.
-- **[Pastebin](https://bin.attkzach.gay/)**: My personal pastebin. Enter your text and click the pencil icon to share it. Running on [bin by w4 on GitHub](https://github.com/w4/bin).
-
-All of my services run on subdomains of my main domain, `*.attkzach.gay`. Anything running under my name elsewhere is _probably_ not mine and could be dangerous.
-
 ## Get in touch
 I can be reached via email at `hey@attkzach.gay` or via the following sites:
 
@@ -57,7 +48,7 @@ I can be reached via email at `hey@attkzach.gay` or via the following sites:
 
 Here's the other places I'm at on the Net:
 
-- [Git Server](https://git.attkzach.gay)
+- [GitHub](https://github.com/zfett)
 - [SoundCloud](https://soundcloud.com/attkzach)
 - [YouTube](https://youtube.com/@attkzach)
 - [Twitch](https://twitch.tv/attkzach_ttv)
