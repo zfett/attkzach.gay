@@ -35,7 +35,7 @@ kramdown:
     syntax_highlighter_opts:
       disable: true
 
-include: ["_pages", "_projects"]
+include: ["_pages"]
 
 exclude: [
   "Gemfile",
@@ -62,9 +62,4 @@ defaults:
     values:
       layout: default
       site-nav: true
-      permalink: /:basename/
-  - scope:
-      path: "_projects"
-      type: "pages"
-    values:
       permalink: /:basename/
