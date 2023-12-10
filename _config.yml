@@ -1,21 +1,21 @@
 title: "attkzach"
 author:
-  name: "attkzach"
-  email: "null"
-description: Welcome to my website, my name is Zachary! I am a hobbyist web developer, graphic designer, and overall tech nerd.
+  name: "Zachary"
+  email: "hey@attkzach.gay"
+description: "My name is Zachary and I am a graphic designer and web developer."
 
 baseurl: ""
 url: "https://attkzach.gay"
 prettyurl: "attkzach.gay"
 
-safe: false
+safe: true
 disable_disk_cache: true
 timezone: "America/New_York"
 encoding: "utf-8"
 future: false
 show_drafts: false
 unpublished: false
-incremental: false
+incremental: true
 highlighter: none
 
 plugins:
@@ -47,8 +47,7 @@ exclude: [
   ".gitignore",
   "_config.yml",
   "LICENSE",
-  "README.md",
-  "build.sh"
+  "README.md"
 ]
 
 defaults:
@@ -60,6 +59,4 @@ defaults:
       path: "_pages"
       type: "pages"
     values:
-      layout: default
-      site-nav: true
       permalink: /:basename/

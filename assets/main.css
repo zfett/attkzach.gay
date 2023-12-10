@@ -1,0 +1,118 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Rethink+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*variables*/
+:root {
+    /*colors*/
+    --c_brandBlue: rgb(82, 156, 224);
+    --c_pageBackground: rgb(233, 240, 246);
+    --c_pageTextNormal: rgb(14, 28, 41);
+    --c_pageTextLink: var(--c_brandBlue);
+    --c_pageTextLinkHover: rgb(42, 116, 184);
+    --c_headerBackground: rgba(14, 28, 41, .8);
+    --c_headerBorder: rgba(84, 98, 111, .8);
+
+    /*breakpoints*/
+    --bp_wide: 1200px;
+
+    /*fonts*/
+    --f_heading: 'Days One', sans-serif;
+    --f_regular: 'Rethink Sans', sans-serif;
+}
+
+/*global elements*/
+::selection {
+    background: var(--c_brandBlue);
+    color: var(--c_pageBackground);
+}
+
+html {
+    background: var(--c_pageBackground);
+    color: var(--c_pageTextNormal);
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--f_regular);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--c_pageTextLink);
+}
+
+a:hover { color: var(--c_pageTextLinkHover) }
+
+/*header.html*/
+#global_headerContainer {
+    position: fixed;
+    display: block;
+    width: calc(100% - 40px);
+    height: 60px;
+    box-shadow: 0 0 0 2px var(--c_headerBorder);
+    border-radius: 30px;
+    top: 20px;
+    left: 20px;
+    background: var(--c_headerBackground);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+#header_contentWrap {
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 60px);
+    height: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+#header_navContainer {
+    position: relative;
+    display: block;
+    font-size: 0;
+}
+
+#header_navContainer .navItem {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    padding: 10px 0;
+    margin: 0 0 0 15px;
+    color: var(--c_pageBackground);
+}
+
+#header_navContainer .navItem:first-of-type { margin: 0 }
+
+#header_brandMark {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 0 0 0 55px;
+    background: url("/assets/image/attkzachLogo.svg") no-repeat left center/40px auto;
+    font-family: var(--f_heading);
+    color: var(--c_pageBackground);
+    line-height: 60px;
+    font-size: 1.4em;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+#header_brandMark:hover,
+#header_navContainer .navItem:hover { opacity: .75 }
+
+/*index.html*/
+#home_heroContainer {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/image/pageBackground.webp")
+                no-repeat bottom center/cover;
+    overflow: hidden;
+}
