@@ -1,11 +1,5 @@
 User-agent: *
-Disallow: /401.html
-Disallow: /403.html
-Disallow: /404.html
-Disallow: /500.html
-Disallow: /discord.html
 Disallow: /assets/
-Allow: /assets/seo-cover.jpg
 
 User-agent: GPTBot
 Disallow: /
