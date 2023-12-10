@@ -4,11 +4,12 @@
 /*variables*/
 :root {
     /*colors*/
-    --c_brandBlue: rgb(82, 156, 224);
+    --c_brandBlue: rgb(45, 155, 255);
     --c_pageBackground: rgb(233, 240, 246);
     --c_pageTextNormal: rgb(14, 28, 41);
+    --c_pageTextLight: rgb(94, 108, 121);
     --c_pageTextLink: var(--c_brandBlue);
-    --c_pageTextLinkHover: rgb(42, 116, 184);
+    --c_pageTextLinkHover: rgb(5, 115, 215);
     --c_headerBackground: rgba(14, 28, 41, .8);
     --c_headerBorder: rgba(84, 98, 111, .8);
 
@@ -23,16 +24,17 @@
 /*global elements*/
 ::selection {
     background: var(--c_brandBlue);
-    color: var(--c_pageBackground);
+    color: var(--c_pageTextNormal);
 }
 
 html {
     background: var(--c_pageBackground);
     color: var(--c_pageTextNormal);
+    scroll-behavior: smooth;
 }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--f_regular);
     margin: 0 auto;
 }
@@ -45,7 +47,25 @@ a {
 
 a:hover { color: var(--c_pageTextLinkHover) }
 
-/*header.html*/
+p {
+    margin: 0 0 1em 0;
+    line-height: 1.5em;
+    font-size: 1.4em;
+}
+
+p:last-of-type { margin: 0 }
+
+h2 {
+    position: relative;
+    display: block;
+    margin: 0 0 1rem 0;
+    font-size: 4rem;
+    line-height: 1em;
+    opacity: .5;
+    font-family: var(--f_heading);
+    letter-spacing: -3px;
+}
+
 #global_headerContainer {
     position: fixed;
     display: block;
@@ -58,6 +78,7 @@ a:hover { color: var(--c_pageTextLinkHover) }
     background: var(--c_headerBackground);
     backdrop-filter: blur(10px);
     z-index: 1000;
+    animation: global_headerContainer 1s 1s 1 ease-in-out backwards;
 }
 
 #header_contentWrap {
@@ -106,13 +127,126 @@ a:hover { color: var(--c_pageTextLinkHover) }
 #header_brandMark:hover,
 #header_navContainer .navItem:hover { opacity: .75 }
 
-/*index.html*/
-#home_heroContainer {
+section {
     position: relative;
     display: block;
     width: 100vw;
     height: 100vh;
-    background: url("/assets/image/pageBackground.webp")
-                no-repeat bottom center/cover;
-    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section a[name] {
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+section:nth-of-type(even):not(:nth-of-type(2)) {
+    background: var(--c_pageBackground);
+    padding-top: 80px;
+}
+
+section:nth-of-type(odd):not(#home_heroContainer) {
+    background: var(--c_pageTextNormal);
+    padding-top: 80px;
+    color: var(--c_pageBackground);
+}
+
+section:nth-of-type(even):not(:nth-of-type(2))::after {
+    background: url("/assets/image/sectionSeparatorDark.svg")
+                repeat-x top center/contain;
+}
+
+section:nth-of-type(odd):not(#home_heroContainer)::after {
+    background: url("/assets/image/sectionSeparatorLight.svg")
+                repeat-x top center/contain;
+}
+
+section:nth-of-type(even) { text-align: left }
+section:nth-of-type(odd) { text-align: right }
+
+#home_heroContainer { background: url("/assets/image/pageBackground.webp") 
+                      no-repeat bottom center/cover }
+
+#home_heroContainer:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--c_pageBackground);
+    animation: home_heroContainer 1s 0s 1 ease-in-out forwards;
+    z-index: 0;
+}
+
+#hero_title {
+    position: absolute;
+    display: inline-block;
+    width: calc(100% - 180px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    line-height: 1em;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    animation: hero_title 1s 1s 1 ease-in-out backwards;
+    z-index: 1;
+}
+
+#hero_title span { 
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, .5);
+    text-decoration-thickness: 8px;
+    font-weight: bold;
+}
+
+.home_sectionContent {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: calc(var(--bp_wide) - 80px);
+    margin: 0;
+    padding: 40px;
+    width: calc(100% - 80px);
+}
+
+/*keyframes*/
+@keyframes global_headerContainer {
+    from { top: -80px }
+    to { top: 20px }
+}
+
+@keyframes hero_title {
+    from {
+        transform: translate(-50%, calc(-50% + 4rem));
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes home_heroContainer {
+    from { opacity: 1 }
+    to { opacity: 0 }
 }

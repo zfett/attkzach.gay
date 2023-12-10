@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="240" viewBox="0 0 3840 240">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0e1c29;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="sectionSeparatorDark" class="cls-1" d="M3600,0h240V240ZM3120,0h480L3360,240ZM2640,0h480L2880,240ZM2160,0h480L2400,240ZM1680,0h480L1920,240ZM1200,0h480L1440,240ZM720,0h480L960,240ZM240,0H720L480,240ZM0,0H240L0,240V0Z"/>
+</svg>
