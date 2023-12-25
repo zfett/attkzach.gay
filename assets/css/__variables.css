@@ -1,0 +1,25 @@
+:root {
+    /*colors*/
+    --clr_darkSlate_0: rgb(30, 34, 38);
+    --clr_darkSlate_1: rgb(50, 54, 58);
+    --clr_darkSlate_2: rgb(70, 74, 78);
+    --clr_darkSlate_3: rgb(90, 94, 98);
+    --clr_darkSlate_4: rgb(110, 114, 118);
+    --clr_darkSlate_5: rgb(130, 134, 138);
+
+    --clr_lightSlate_0: rgb(160, 164, 168);
+    --clr_lightSlate_1: rgb(180, 184, 188);
+    --clr_lightSlate_2: rgb(200, 204, 208);
+    --clr_lightSlate_3: rgb(220, 224, 228);
+    --clr_lightSlate_4: rgb(240, 244, 248);
+    --clr_lightSlate_5: rgb(250, 254, 255);
+
+    --clr_blueAccent_0: rgb(45, 120, 190);
+    --clr_blueAccent_1: rgb(65, 145, 220);
+    --clr_blueAccent_2: rgb(100, 170, 240);
+    --clr_blueAccent_3: rgb(140, 200, 255);
+
+    /*fonts*/
+    --fnt_sansSerif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --fnt_monoSpace: "JetBrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
