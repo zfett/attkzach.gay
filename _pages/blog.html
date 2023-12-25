@@ -15,9 +15,7 @@ nav_position: 4
     <p class="post__snippet">{{ post.excerpt | strip_html | strip_newlines | truncatewords: 15 }} <a href="{{ post.url }}">Read full post <icon>arrow_forward</icon></a></p>
     <div class="post__info">
         <div class="info__text"><icon>person</icon> Posted by
-            {% for author in post.authors %}
-            {{ author.first_name }} {{ author.last_name }}{% if forloop.last %}.{% else %}, {% endif %}
-            {% endfor %}
+            {{ post.authors.name }}
         </div>
         <div class="info__text"><icon>calendar_month</icon> Published on {{ post.date | date: "%B %-d, %Y" }}.</div>
         <div class="info__text"><icon>sell</icon>

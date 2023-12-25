@@ -11,7 +11,7 @@ safe: true
 disable_disk_cache: true
 timezone: "America/New_York"
 encoding: "utf-8"
-future: false
+future: true
 show_drafts: false
 unpublished: false
 incremental: true

@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/image/public/attachment"
+site_url: https://attkzach.gay
+display_url: https://attkzach.gay
+logo_url: https://attkzach.gay/assets/image/brand/attkzach_logo_color.svg
+locale: "en"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Published?", name: "published", widget: "boolean"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        max: 4
+        min: 1
+        default: ["technology"]
+      - label: "Authors"
+        name: "authors"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Name", name: "name", widget: "string", default: "Zachary Fetters"}
+          - {label: "Email", name: "email", widget: "string", default: "hey@attkzach.gay"}
+      - {label: "Body", name: "body", widget: "markdown"}

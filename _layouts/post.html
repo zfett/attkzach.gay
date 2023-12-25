@@ -63,9 +63,7 @@
                 <h3 class="postTitle">{{ page.title }}</h3>
                 <div class="postInfo">
                     <span class="postInfo__text"><icon>person</icon> Posted by
-                        {% for author in page.authors %}
-                        <a href="mailto:{{ author.email }}" title="Email the author">{{ author.first_name }} {{ author.last_name }}</a>{% if forloop.last %}.{% else %}, {% endif %}
-                        {% endfor %}
+                        <a href="mailto:{{ page.authors.email }}" title="Email the author">{{ page.authors.name }}</a>
                     </span>
                     <span class="postInfo__text"><icon>calendar_month</icon> Published on {{ page.date | date: "%B %-d, %Y" }}.</span>
                     <span class="postInfo__text"><icon>sell</icon>
