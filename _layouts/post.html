@@ -7,7 +7,6 @@
 
         <link rel="icon" href="/favicon.png" type="image/png">
         <link rel="preload" href="/assets/font/fonts.min.css" as="style" type="text/css">
-        <link rel="stylesheet" href="/assets/font/fonts.min.css" media="print" onload="this.media='all'" />
         <noscript><link rel="stylesheet" href="/assets/font/fonts.min.css" /></noscript>
         <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
         {% if page.style %}
@@ -55,8 +54,8 @@
             <div class="pageContent__title">
                 <h2 class="pageContent__title__text" aria-hidden="true"><a href="/blog/"><icon>rss_feed</icon> blog</a> / {{ page.slug | downcase }}</h2>
                 <div>
-                    <button class="pageContent__title__btn" onclick="copyText('{{site.url}}{{page.url}}')" title="Copy page URL (Control+Alt+C)" aria-label="Copy page URL" aria-keyshortcuts="Control+Alt+C"><icon>link</icon></button>
-                    <button class="pageContent__title__btn" onclick="copyText('{{site.url}}/feed.xml')" title="Copy RSS feed URL" aria-label="Copy RSS feed URL"><icon>rss_feed</icon></button>
+                    <button class="pageContent__title__btn" id="copyPageUrlBtn" title="Copy page URL (Control+Alt+C)" aria-label="Copy page URL" aria-keyshortcuts="Control+Alt+C"><icon>link</icon></button>
+                    <button class="pageContent__title__btn" id="copyFeedUrlBtn" title="Copy RSS feed URL" aria-label="Copy RSS feed URL"><icon>rss_feed</icon></button>
                 </div>
             </div>
             <div class="pageContent__text">

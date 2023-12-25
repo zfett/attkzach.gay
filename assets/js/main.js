@@ -1,5 +1,10 @@
 let activeNotification;
 
+const COPY_PAGE_URL_BTN = document.getElementById("copyPageUrlBtn");
+const COPY_FEED_URL_BTN = document.getElementById("copyFeedUrlBtn");
+const PAGE_URL = `${location.protocol}//${location.host}${location.pathname}`;
+const FEED_URL = `${location.protocol}//${location.host}/feed.xml`;
+
 function _sendNotification(text, duration = 3) {
     if (text && !activeNotification) {
         //create our element node
@@ -44,7 +49,7 @@ function _sendNotification(text, duration = 3) {
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/write
-function copyText(text) {
+function _copyText(text) {
     if (text) {
         var type = "text/plain";
         var blob = new Blob([text], {type});
@@ -65,8 +70,11 @@ document.addEventListener("keydown", (e) => {
         if (e.altKey) {
             if (e.code === "KeyC") {
                 //we don't want any queries in our url, same as page.url in jekyll
-                copyText(`${location.protocol}//${location.host}${location.pathname}`);
+                _copyText(PAGE_URL);
             }
         }
     }
 });
+
+if (COPY_PAGE_URL_BTN !== null) { COPY_PAGE_URL_BTN.addEventListener("click", ()=>{_copyText(PAGE_URL)}) }
+if (COPY_FEED_URL_BTN !== null) { COPY_FEED_URL_BTN.addEventListener("click", ()=>{_copyText(FEED_URL)}) }
