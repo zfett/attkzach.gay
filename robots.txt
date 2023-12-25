@@ -1,5 +1,13 @@
 User-agent: *
 Disallow: /assets/
+Disallow: /admin/
+Disallow: /404.html
+Allow: /assets/image/public/
 
+User-agent: CCBot
 User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: FacebookBot
+User-agent: Omgilibot
 Disallow: /
