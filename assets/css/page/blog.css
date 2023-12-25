@@ -1,12 +1,16 @@
 .post {
     position: relative;
     display: block;
-    padding: 20px 40px;
+    padding: 40px;
     margin: 0 0 20px 0;
-    border-bottom: 1px solid var(--clr_darkSlate_2);
+    background: var(--clr_darkSlate_0);
+    border-radius: 20px;
+    border: 1px solid var(--clr_darkSlate_2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.25);
+    width: calc(100% - 82px);
 }
 
-.post:last-of-type { border: 0 }
+.post:last-of-type { margin: 0 }
 
 .post__title {
     position: relative;
@@ -15,7 +19,7 @@
     line-height: 2rem;
     margin: 0;
     padding: 0 0 20px 0;
-    color: var(--clr_lightSlate_5);
+    color: var(--clr_blueAccent_1);
 }
 
 .post__snippet {
@@ -31,6 +35,7 @@
 .info__text {
     display: inline-block;
     margin: 0 10px 0 0;
+    color: var(--clr_lightSlate_0);
 }
 
 .info__text:last-of-type { margin: 0 }

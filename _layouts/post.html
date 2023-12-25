@@ -68,6 +68,11 @@
                         {% endfor %}
                     </span>
                     <span class="postInfo__text"><icon>calendar_month</icon> Published on {{ page.date | date: "%B %-d, %Y" }}.</span>
+                    <span class="postInfo__text"><icon>sell</icon>
+                        {% for tag in page.tags %}
+                        {{ tag | capitalize }}{% if forloop.last %}{% else %}, {% endif %}
+                        {% endfor %}
+                    </span>
                 </div>
                 {{ content }}
             </div>
