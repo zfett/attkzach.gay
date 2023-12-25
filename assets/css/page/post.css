@@ -1,0 +1,12 @@
+.postInfo {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--clr_lightSlate_0);
+    border-bottom: 1px solid var(--clr_darkSlate_2);
+    padding: 0 0 2rem 0;
+    margin: 0 0 2rem 0;
+}
+
+.postInfo__text:not(:last-of-type) { margin: 0 10px 0 0 }

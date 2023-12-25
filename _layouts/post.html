@@ -50,15 +50,21 @@
         </aside>
         <main class="pageContent">
             <div class="pageContent__title">
-                <h2 class="pageContent__title__text" aria-hidden="true"><icon>{{ page.icon }}</icon> {{ page.title | downcase }}</h2>
+                <h2 class="pageContent__title__text" aria-hidden="true"><a href="/blog/"><icon>rss_feed</icon> blog</a> / {{ page.slug | downcase }}</h2>
                 <div>
                     <button class="pageContent__title__btn" onclick="copyText('{{site.url}}{{page.url}}')" title="Copy page URL (Control+Alt+C)" aria-label="Copy page URL" aria-keyshortcuts="Control+Alt+C"><icon>link</icon></button>
-                    {% if page.name == "blog.md" %}
-                    <button class="pageContent__title__btn" onclick="copyText('{{site.url}}/feed.xml')" title="Copy RSS feed URL" aria-label="Copy RSS feed URL"><icon>rss_feed</icon></button>
-                    {% endif %}
                 </div>
             </div>
             <div class="pageContent__text">
+                <h3 class="postTitle">{{ page.title }}</h3>
+                <div class="postInfo">
+                    <span class="postInfo__text"><icon>person</icon> Posted by
+                        {% for author in page.authors %}
+                        <a href="mailto:{{ author.email }}" title="Email the author">{{ author.name }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+                        {% endfor %}
+                    </span>
+                    <span class="postInfo__text"><icon>calendar_month</icon> Published on {{ page.date | date: "%B %-d, %Y" }}.</span>
+                </div>
                 {{ content }}
             </div>
         </main>

@@ -1,0 +1,36 @@
+.post {
+    position: relative;
+    display: block;
+    padding: 20px 40px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid var(--clr_darkSlate_2);
+}
+
+.post:last-of-type { border: 0 }
+
+.post__title {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: var(--clr_lightSlate_5);
+}
+
+.post__snippet {
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 0 0 20px 0;
+    color: var(--clr_lightSlate_2);
+}
+
+.info__text {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.info__text:last-of-type { margin: 0 }

@@ -55,6 +55,40 @@ a {
 a:hover,
 a:focus { color: var(--clr_blueAccent_2) }
 
+h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    line-height: 1em;
+    margin: 0 0 2rem 0;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    z-index: -1;
+    background: var(--clr_darkSlate_1);
+    animation: .5s ease-in-out h3_after 1 forwards;
+}
+
+@keyframes h3_after {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+h4 {
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    line-height: 1em;
+    margin: 0 0 2rem 0;
+    color: var(--clr_lightSlate_1);
+}
+
 code { font-family: var(--fnt_monoSpace) }
 
 pre {
@@ -125,28 +159,34 @@ button:hover {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px min-content min-content 1fr min-content;
+    grid-template-rows: min-content min-content min-content 1fr min-content;
     justify-content: space-between;
-    overflow: hidden;
+    overflow: hidden auto;
     width: 300px;
-    height: 100vh;
+    height: calc(100vh - 60px);
+    margin: 60px 0 0 0;
     border-right: 1px solid var(--clr_darkSlate_2);
     background: rgba(0, 0, 0, .15);
     z-index: 3;
 }
 
 .navSidebar .branding {
-    position: relative;
+    position: fixed;
     display: grid;
+    top: 0;
+    left: 0;
     grid-template-columns: 43px min-content;
     gap: 10px;
-    width: calc(100% - 40px);
+    width: 260px;
     padding: 0 20px;
     height: 60px;
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid var(--clr_darkSlate_1);
+    border-right: 1px solid var(--clr_darkSlate_2);
+    background: var(--clr_darkSlate_0);
     cursor: pointer;
+    z-index: 4;
 }
 
 .navSidebar .branding__logo {
@@ -293,7 +333,8 @@ button:hover {
     top: 0;
     right: 0;
     height: 60px;
-    width: calc(100% - 301px);
+    width: calc(100% - 341px);
+    padding: 0 20px;
     background: var(--clr_darkSlate_0);
     border-bottom: 1px solid var(--clr_darkSlate_1);
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, .25);
@@ -302,18 +343,19 @@ button:hover {
 
 .pageContent__title__text {
     position: relative;
-    margin: 0 20px;
     font-family: var(--fnt_monoSpace);
     font-weight: 400;
     color: var(--clr_lightSlate_0);
 }
 
-.pageContent__title_copy {
+.pageContent__title__btn {
+    position: relative;
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 20px;
     padding: 0;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
     font-size: 1.2rem;
     background: rgba(255, 255, 255, 0.1);
 }
@@ -327,38 +369,4 @@ button:hover {
     min-height: calc(100vh - 140px);
     max-width: calc(1200px - 160px);
     z-index: 1;
-}
-
-.pageContent__text h3 {
-    position: relative;
-    display: inline-block;
-    font-size: 4rem;
-    line-height: 1em;
-    margin: 0 0 2rem 0;
-}
-
-.pageContent__text h3::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2rem;
-    bottom: 0;
-    z-index: -1;
-    background: var(--clr_darkSlate_1);
-    animation: .5s ease-in-out h3_after 1 forwards;
-}
-
-@keyframes h3_after {
-    from { width: 0% }
-    to { width: 100% }
-}
-
-.pageContent__text h4 {
-    position: relative;
-    display: block;
-    font-size: 2rem;
-    line-height: 1em;
-    margin: 0 0 2rem 0;
-    color: var(--clr_lightSlate_1);
 }
