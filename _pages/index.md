@@ -1,7 +1,7 @@
 ---
 title: "Homepage"
 permalink: /
-style: index.css
+style: index
 icon: home
 ---
 <div class="homepageTextContainer">
