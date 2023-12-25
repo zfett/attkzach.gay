@@ -1,0 +1,6 @@
+<meta property="article:published_date" content="{{ page.date | date: '%Y-%m-%d' }}">
+{% for author in page.authors %}
+<meta property="profile:first_name" content="{{ author.first_name }}">
+<meta property="profile:last_name" content="{{ author.last_name }}">
+<meta property="profile:username" content="{{ author.email }}">
+{% endfor %}

@@ -14,9 +14,12 @@
         <link rel="stylesheet" href="/assets/css/page/{{ page.style }}.css" type="text/css">
         {% endif %}
 
-        <script defer src="/assets/js/main.js" type="text/javascript"></script>
+        <script defer src="/assets/js/main.min.js" type="text/javascript"></script>
 
         <title>{{ page.title }} - {{ site.title }}</title>
+
+        {% include seo.html %}
+        {% include seo_post.html %}
     </head>
     <body>
         <aside class="navSidebar">
@@ -53,6 +56,7 @@
                 <h2 class="pageContent__title__text" aria-hidden="true"><a href="/blog/"><icon>rss_feed</icon> blog</a> / {{ page.slug | downcase }}</h2>
                 <div>
                     <button class="pageContent__title__btn" onclick="copyText('{{site.url}}{{page.url}}')" title="Copy page URL (Control+Alt+C)" aria-label="Copy page URL" aria-keyshortcuts="Control+Alt+C"><icon>link</icon></button>
+                    <button class="pageContent__title__btn" onclick="copyText('{{site.url}}/feed.xml')" title="Copy RSS feed URL" aria-label="Copy RSS feed URL"><icon>rss_feed</icon></button>
                 </div>
             </div>
             <div class="pageContent__text">
@@ -60,7 +64,7 @@
                 <div class="postInfo">
                     <span class="postInfo__text"><icon>person</icon> Posted by
                         {% for author in page.authors %}
-                        <a href="mailto:{{ author.email }}" title="Email the author">{{ author.name }}</a>{% if forloop.last %}.{% else %}, {% endif %}
+                        <a href="mailto:{{ author.email }}" title="Email the author">{{ author.first_name }} {{ author.last_name }}</a>{% if forloop.last %}.{% else %}, {% endif %}
                         {% endfor %}
                     </span>
                     <span class="postInfo__text"><icon>calendar_month</icon> Published on {{ page.date | date: "%B %-d, %Y" }}.</span>
