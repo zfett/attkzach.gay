@@ -26,7 +26,7 @@
                 <h1 class="branding__title">{{ site.title }}</h1>
             </div></a>
             <nav class="sidebarNavigation" name="Site Pages">
-                {% assign pages = site.pages | sort: "nav_position" %}
+                {% assign pages = site.pages | where: "show_in_nav", "true" | sort: "nav_position" %}
                 {% for p in pages %}
                     {% if p.nav_group == "main" %}
                         <a href="{{ p.url }}" class="navItem"><icon aria-hidden="true">{{ p.icon }}</icon><span>{{ p.title }}</span><icon aria-hidden="true"></icon></a>
@@ -34,14 +34,14 @@
                 {% endfor %}
             </nav>
             <nav class="sidebarNavigation" name="Social Media">
-                {% assign links = site.data.external-links %}
+                {% assign links = site.data.external-links.link %}
                 {% for l in links %}
                     <a href="{{ l.url }}" class="navItem--external"><span class="navItem__icon {{ l.icon }}"></span><span>{{ l.title }}</span><icon aria-hidden="true">north_east</icon></a>
                 {% endfor %}
             </nav>
             <div class="spacer" aria-hidden="true"></div>
             <nav class="sidebarNavigation--misc" name="Misc. Links">
-                {% assign pages = site.pages | sort: "nav_position" %}
+                {% assign pages = site.pages | where: "show_in_nav", "true" | sort: "nav_position" %}
                 {% for p in pages %}
                     {% if p.nav_group == "misc" %}
                         <a href="{{ p.url }}" class="navItem--misc"><span>{{ p.title }}</span></a>

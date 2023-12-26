@@ -1,12 +1,5 @@
-- title: "Mastodon"
-  url: "https://wetdry.world/@attkzach"
-  icon: "mastodon"
-- title: "Twitch"
-  url: "https://twitch.tv/attkzach_ttv"
-  icon: "twitch"
-- title: "GitHub"
-  url: "https://github.com/zfett"
-  icon: "github"
-- title: "YouTube"
-  url: "https://www.youtube.com/@attkzach"
-  icon: "youtube"
+link:
+  - {title: "Mastodon", url: "https://wetdry.world/@attkzach", icon: "mastodon"}
+  - {title: "Twitch", url: "https://twitch.tv/attkzach_ttv", icon: "twitch"}
+  - {title: "GitHub", url: "https://github.com/zfett", icon: "github"}
+  - {title: "YouTube", url: "https://www.youtube.com/@attkzach", icon: "youtube"}

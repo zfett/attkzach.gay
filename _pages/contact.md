@@ -1,6 +1,7 @@
 ---
 title: "Contact"
 icon: mail
+show_in_nav: true
 nav_group: main
 nav_position: 3
 ---

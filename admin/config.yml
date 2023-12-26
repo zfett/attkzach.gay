@@ -12,9 +12,49 @@ slug:
   sanitize_replacement: "-"
 
 collections:
+  - name: "data"
+    label: "Site Data"
+    files:
+      - label: "External Links"
+        name: "external-links"
+        file: "_data/external-links.yml"
+        fields:
+          - name: "link"
+            widget: "list"
+            fields:
+              - {label: "Link Title", name: "title", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Icon Name", name: "icon", widget: "string"}
+      - label: "Webrings"
+        name: "webrings"
+        file: "_data/webrings.yml"
+        fields:
+          - name: "webring"
+            widget: "list"
+            fields:
+              - {label: "Webring Name", name: "title", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "'Previous' Link", name: "prev_link", widget: "string"}
+              - {label: "'Next' Link", name: "next_link", widget: "string"}
+              - {label: "'Random' Link", name: "rand_link", widget: "string", default: ""}
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages/"
+    create: true
+    slug: "{{slug}}"
+    preview_path: /{{title}}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Show in navigation?", name: "show_in_nav", widget: "boolean", default: "true"}
+      - {label: "Navigation Group", name: "nav_group", widget: "select", options: ["main", "misc"], default: "main"}
+      - {label: "Navigation Position", name: "nav_position", widget: "number"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "posts"
     label: "Posts"
-    folder: "_posts"
+    folder: "_posts/"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     preview_path: blog/{{title}}/

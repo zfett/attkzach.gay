@@ -60,6 +60,7 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
+      show_in_nav: true
   - scope:
       path: "_posts"
       type: "posts"

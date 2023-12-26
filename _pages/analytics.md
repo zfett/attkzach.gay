@@ -1,6 +1,7 @@
 ---
 title: "Analytics"
 icon: monitoring
+show_in_nav: true
 nav_group: misc
 nav_position: 2
 ---

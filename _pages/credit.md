@@ -1,6 +1,7 @@
 ---
 title: "Credits"
 icon: info
+show_in_nav: true
 nav_group: misc
 nav_position: 1
 ---
