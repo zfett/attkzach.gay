@@ -34,9 +34,9 @@ collections:
             fields:
               - {label: "Webring Name", name: "title", widget: "string"}
               - {label: "URL", name: "url", widget: "string"}
-              - {label: "'Previous' Link", name: "prev_link", widget: "string"}
-              - {label: "'Next' Link", name: "next_link", widget: "string"}
-              - {label: "'Random' Link", name: "rand_link", widget: "string", default: ""}
+              - {label: "'Previous' Link", name: "prev_url", widget: "string"}
+              - {label: "'Next' Link", name: "next_url", widget: "string"}
+              - {label: "'Random' Link", name: "rand_url", widget: "string", default: ""}
   - name: "pages"
     label: "Pages"
     folder: "_pages/"
