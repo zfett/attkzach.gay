@@ -2,7 +2,7 @@ User-agent: *
 Disallow: /assets/
 Disallow: /admin/
 Disallow: /404.html
-Allow: /assets/image/public/
+Allow: /assets/image/hotlink-ok/
 
 User-agent: CCBot
 User-agent: GPTBot
