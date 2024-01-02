@@ -112,6 +112,15 @@ h4 {
     color: var(--clr_lightSlate_1);
 }
 
+h5 {
+    position: relative;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1em;
+    margin: 0 0 1.5rem 0;
+    color: var(--clr_lightSlate_0);
+}
+
 code { font-family: var(--fnt_monoSpace) }
 
 pre {
@@ -328,10 +337,10 @@ button:hover {
     opacity: .75;
 }
 
-.sidebarNavigation .navItem__icon.mastodon { background-image: url("/assets/image/icons/mastodon.svg") }
-.sidebarNavigation .navItem__icon.twitch { background-image: url("/assets/image/icons/twitch.svg") }
-.sidebarNavigation .navItem__icon.github { background-image: url("/assets/image/icons/github.svg") }
-.sidebarNavigation .navItem__icon.youtube { background-image: url("/assets/image/icons/youtube.svg") }
+.sidebarNavigation .navItem__icon.mastodon { background-image: url( "/assets/image/icons/mastodon.svg" ) }
+.sidebarNavigation .navItem__icon.twitch   { background-image: url( "/assets/image/icons/twitch.svg"   ) }
+.sidebarNavigation .navItem__icon.github   { background-image: url( "/assets/image/icons/github.svg"   ) }
+.sidebarNavigation .navItem__icon.youtube  { background-image: url( "/assets/image/icons/youtube.svg"  ) }
 
 /*main page content*/
 .pageContent {

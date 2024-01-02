@@ -18,4 +18,4 @@ My ideology around web development is based in simplicity and accessibility: usi
 My inspiration for design is rooted in minimalism and abstract forms. I love bold, yet limited color palettes and experimenting with form and composition. However, I've never been one to stay in a box, so my design tastes evolve over time based on what is tickling my fancy in that moment.
 
 #### Now
-Right now, I'm working at a full-time remote data entry job and have been doing so since November of 2021, which leaves me with little time to pursue projects and client work. My work picks up from the end of December to around April, so it'll be a bit before I'll have more time.
+Right now, I'm working at a full-time remote data entry job and have been doing so since November of 2021, which leaves me with little time to pursue projects and client work.

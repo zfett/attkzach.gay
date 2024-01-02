@@ -8,7 +8,7 @@ nav_position: 1
 ### Third-party Credits
 
 #### Jekyll
-This site was built with [Jekyll](https://jekyllrb.com/) and is licensed under the [MIT License](https://github.com/jekyll/jekyll/blob/master/LICENSE).
+This site was built with [Jekyll](https://jekyllrb.com/). Jekyll is licensed under the [MIT License](https://github.com/jekyll/jekyll/blob/master/LICENSE).
 
 #### Site Design
 The design of this site was heavily inspired by [Volpeon's Den](https://volpeon.ink/).

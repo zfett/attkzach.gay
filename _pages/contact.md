@@ -16,14 +16,14 @@ If encryped email is more your speed, use my ProtonMail address: `zachfett "at" 
 - Date generated: `Thursday, December 21, 2023 7:45:10 PM GMT (Unix Epoch: 1703187910)`
 - Expiry time: `Never`
 
-**Signature Proof:**
+##### Signature Proof:
 - [Original file](/assets/file/signature-message.txt)
 - [Signed file](/assets/file/signature-message.txt.gpg)
 - [Signature output](/assets/file/signature-message.txt.sig)
 
 To verify, download the original and signed files and run `gpg -d signature-message.txt.gpg`. If valid, the fingerprint after `using EDDSA key` should match the signature of the public key below.
 
-**Public Key:**
+##### Public Key:
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Comment: 9F1D 729B 4742 1065 8D74  AACD 7795 EFCF E699 87A2
