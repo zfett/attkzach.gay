@@ -14,7 +14,7 @@ authors:
 ---
 This is a test post, please don't publish it live.
 
-![Screenshot of Minecraft](/assets/image/public/attachment/screenshot_2023-12-02_204235.png)
+![Screenshot of Minecraft](/assets/image/hotlink-ok/attachment/screenshot_2023-12-02_204235.png)
 
 ![Narrow Image](/assets/image/pageGrid.webp)
 

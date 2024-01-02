@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/image/public/attachment"
+media_folder: "assets/image/hotlink-ok/attachment"
 site_url: https://attkzach.gay
 logo_url: https://attkzach.gay/assets/image/brand/attkzach_logo_color.svg
 locale: "en"
