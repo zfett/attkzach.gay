@@ -5,9 +5,10 @@ permalink: /about
 show_in_nav: true
 nav_group: main
 nav_position: 1
+script: about
 ---
 ### About Me
-Hello, my name is Zachary and I am a amateur graphic designer, web developer, programmer, gamer, and many more things that would take too much space to list. I am 22 years old (born on the 14th of January, 2001) and my pronouns are `he/him/his`.
+Hello, my name is Zachary and I am a amateur graphic designer, web developer, programmer, gamer, and many more things that would take too much space to list. I am <span id="age">00</span> years old (born on the 14th of January, 2001) and my pronouns are `he/him/his`.
 
 My interest in graphic design began when I was in middle school (ca. 2012-2013). Me and my friends were heavily invested in playing Minecraft together and I had ambitions to become a YouTuber like any other twelve-year-old kid at the time. I decided to start up a channel, but I needed a logo and art to create a brand. I downloaded GIMP and sat down to teach myself the ropes. Within 3 years, I had a pretty good grasp of the program and even made art for my friends and family at the time. Once I entered high school in 2015, I upgraded to Adobe Photoshop and haven't looked back since.
 

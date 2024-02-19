@@ -395,8 +395,7 @@ button:hover {
 .pageContent__text {
     position: relative;
     display: block;
-    margin: 40px auto 80px auto;
-    padding: 0 80px;
+    margin: 40px 80px 80px 80px;
     width: calc(100% - 160px);
     min-height: calc(100vh - 180px);
     max-width: calc(1200px - 160px);
@@ -414,4 +413,66 @@ button:hover {
     pointer-events: none;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .25);
     background: #808080 url("/assets/image/transparencyGrid.webp") repeat center/50px;
+}
+
+@media only screen and (max-width: 1100px) {
+    html { font-size: 14px }
+
+    body { grid-template-columns: 81px 1fr }
+
+    h3 { font-size: 2.4rem }
+
+    h3::before { height: 1.2rem }
+
+    h4 { font-size: 1.4rem }
+    
+    h5 { font-size: 1rem }
+
+    .navSidebar { width: 80px }
+
+    .navSidebar .branding {
+        width: 40px;
+        grid-template-columns: 40px min-content;
+        gap: 0;
+    }
+
+    .navSidebar .branding .branding__title { display: none }
+
+    .navSidebar .branding .branding__logo {
+        width: 40px;
+        background: url("/assets/image/brand/attkzach_logo_color.svg") no-repeat center/40px auto;
+    }
+
+    .sidebarNavigation .navItem,
+    .sidebarNavigation .navItem--external {
+        font-size: 0;
+        grid-template-columns: min-content;
+        padding: 8px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebarNavigation .navItem__icon,
+    .sidebarNavigation .navItem icon {
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .sidebarNavigation .navItem span,
+    .sidebarNavigation .navItem--external span:not(:first-child) { display: none }
+
+    .sidebarNavigation .navItem icon:last-child,
+    .sidebarNavigation .navItem--external icon:last-child { display: none }
+
+    .sidebarNavigation--misc { display: none }
+
+    .pageContent__title { width: calc(100% - 121px) }
+
+    .pageContent__text {
+        margin: 40px;
+        width: calc(100% - 80px);
+    }
 }
