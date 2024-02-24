@@ -5,7 +5,7 @@ author:
 description: "My name is Zachary and I am a graphic designer and web developer."
 
 baseurl: ""
-url: "attkzach.gay"
+url: "https://attkzach.gay"
 
 safe: true
 disable_disk_cache: true

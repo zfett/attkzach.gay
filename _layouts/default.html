@@ -12,7 +12,7 @@
     <body>
         <aside class="siteSidebar">
             <h1 class="siteSidebar__siteTitle">{{ site.title }}</h1>
-            <nav class="sideSidebar__mainNavigation">
+            <nav class="siteSidebar__mainNavigation">
                 {% assign nav-links = site.pages | where: "top-level", "true" | sort: "order" %}
                 {% for link in nav-links %}
                 {% if link.top-level == true %}
