@@ -156,3 +156,7 @@ hr {
     color: var(--gray);
     text-align: right;
 }
+
+@media only screen and (max-width: 800px) {
+    .siteSidebar__siteTitle { display: none }
+}

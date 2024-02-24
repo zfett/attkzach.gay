@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+summary: "Details on how to get in touch with me."
 order: 4
 ---
 ### Email

@@ -1,18 +1,15 @@
-<meta name="title" content="{{ page.title }} - {{ site.title }}">
-<meta name="description" content="{{ site.description }}">
-<meta property="og:description" content="{{ site.description }}">
-<meta property="twitter:description" content="{{ site.description }}">
+<meta name="title" content="{{ page.title }}">
+<meta name="description" content="{{ page.summary }}">
+<meta property="og:description" content="{{ page.summary }}">
+<meta property="twitter:description" content="{{ page.summary }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}">
-<meta property="og:site_name" content="{{ site.title }}">
+{% if site.url contains "http" %}
+<meta property="og:site_name" content="{{ site.url | remove: 'http://'}}">
+{% elsif site.url contains "https" %}
+<meta property="og:site_name" content="{{ site.url | remove: 'https://'}}">
+{% else %}
+<meta property="og:site_name" content="{{ site.url }}">
+{% endif %}
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="{{ page.title }} - {{ site.title }}">
-<meta property="og:image" content="{{ site.url }}/assets/image/hotlink-ok/seo_cover.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="600">
-<meta property="og:image:alt" content="attkzach - Graphic designer, web developer, and jack of many trades.">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ site.url }}">
-<meta property="twitter:title" content="{{ page.title }} - {{ site.title }}">
-<meta property="twitter:image" content="{{ site.url }}/assets/image/hotlink-ok/seo_cover.jpg">
+<meta property="og:title" content="{{ page.title }}">

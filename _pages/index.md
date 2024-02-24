@@ -1,5 +1,6 @@
 ---
 title: "Homepage"
+summary: "Welcome to my personal website!"
 permalink: "/"
 order: 1
 ---

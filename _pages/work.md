@@ -1,5 +1,6 @@
 ---
 title: "Work"
+summary: "A selection of the things I've done over the years."
 order: 3
 ---
 ### Art
