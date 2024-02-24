@@ -1,5 +1,8 @@
 <meta name="title" content="{{ page.title }}">
 <meta name="description" content="{{ page.summary }}">
+{% if page.index != false or page.index == blank %}
+<meta name="robots" content="index, follow">
+{% endif %}
 <meta property="og:description" content="{{ page.summary }}">
 <meta property="twitter:description" content="{{ page.summary }}">
 <meta property="og:type" content="website">

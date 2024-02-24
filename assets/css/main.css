@@ -69,15 +69,13 @@ h3 {
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 0 0 1rem;
-    color: var(--gray);
 }
 
 h4, h5, h6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     margin: 0 0 1rem 0;
     font-weight: normal;
-    color: var(--gray);
 }
 
 ul, ol {
@@ -93,7 +91,7 @@ li {
 hr {
     position: relative;
     display: block;
-    margin: 20px 0 0 -20px;
+    margin: 20px 0 20px -20px;
     width: calc(100% + 40px);
     height: 1px;
     background: linear-gradient(90deg, var(--lightgray), var(--offwhite));
