@@ -1,11 +1,11 @@
-title: "attkzach.gay"
+title: "Zachary Fetters"
 author:
   name: "Zachary Fetters"
   email: "hey@attkzach.gay"
 description: "My name is Zachary and I am a graphic designer and web developer."
 
 baseurl: ""
-url: "https://attkzach.gay"
+url: "attkzach.gay"
 
 safe: true
 disable_disk_cache: true
@@ -60,7 +60,7 @@ defaults:
     values:
       permalink: /:basename/
       layout: default
-      show_in_nav: true
+      top-level: true #show in navbar
   - scope:
       path: "_posts"
       type: "posts"
@@ -68,4 +68,3 @@ defaults:
       permalink: /:categories/:title/
       layout: post
       categories: blog
-      style: post
