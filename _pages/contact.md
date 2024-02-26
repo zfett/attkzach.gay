@@ -11,6 +11,6 @@ I can be contacted via email at **hey -at- attkzach -dot- gay** (replace the "-a
 
 I have a few social media profiles under my name or alias, not all of which I am active on. _(I do not accept requests for paid work on these accounts. Please send any work/business inquiries to the aforementioned email address)_.
 
-- [Bluesky (as Greentree)](https://bsky.app/profile/greentreemusic.bsky.social)
+- [Bluesky](https://bsky.app/profile/attkzach.gay)
 - [Mastodon](https://wetdry.world/@attkzach)
 - [Instagram](https://www.instagram.com/attkzach/)
