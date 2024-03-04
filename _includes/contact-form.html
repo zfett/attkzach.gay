@@ -1,0 +1,20 @@
+<form id="contactForm" name="contact" method="POST" data-netlify-recaptcha="true" netlify-honeypot="catch-all" autocomplete="off" netlify>
+    <p>
+        <label>Your name: <br><input type="text" name="name"/></label>
+    </p>
+    <p>
+        <label>Your email: <br><input type="email" name="email"/></label>
+    </p>
+    <p class="hidden">
+        <label>Don't fill this out if you're human: <input name="catch-all"/></label>
+    </p>
+    <p>
+        <label>Message: <br><textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <div data-netlify-recaptcha="true" class="captcha"></div>
+    </p>
+    <p>
+        <button type="submit">Send</button>
+    </p>
+</form>

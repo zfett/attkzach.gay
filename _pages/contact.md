@@ -5,6 +5,8 @@ order: 4
 ---
 # Contact Me
 
+{% include contact-form.html %}
+
 ## Email
 
 I can be contacted via email at **hey -at- attkzach -dot- gay** (replace the "-at-" and "-dot-" with "@" and "." without spaces, respectively). Please note that I work a full-time job so I'm not able to answer emails immediately, nor am I always able to accept paid work if it doesn't fit within my schedule.

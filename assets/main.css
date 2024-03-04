@@ -6,10 +6,13 @@
     --blueAccent: rgb(30, 50, 60);
 
     --maxBreakpoint: 1400px;
+
+    --bodyFont: 'Inter', sans-serif;
+    --headingFont: 'Archivo Black', sans-serif;
 }
 
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--bodyFont);
     font-size: 18px;
     color: var(--pageTextNormal);
     background: var(--pageBackground);
@@ -31,6 +34,11 @@ main {
     width: calc(100% - 80px);
     padding: 40px;
     margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 
 main p, li {
@@ -59,7 +67,7 @@ main a:hover {
 h1, h2, h3, h4, h5, h6 { margin: 0 0 20px 0 }
 
 h1, h2 { 
-    font-family: 'Advent Pro', sans-serif;
+    font-family: var(--headingFont);
     line-height: 1em;
 }
 
@@ -323,8 +331,67 @@ h4, h5, h6 {
     margin: 0 auto;
 }
 
+/* form */
+form {
+    position: relative;
+    display: block;
+    max-width: 600px;
+    width: calc(100% - 44px);
+    padding: 20px;
+    margin: 40px auto;
+    border: 2px solid rgba(0, 0, 0, .15);
+    background: var(--headerBackground)
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 4px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid rgba(0, 0, 0, .15);
+    font-family: var(--bodyFont);
+    font-size: 1.2rem;
+    outline: 0;
+    transition: border-color .15s ease-in-out;
+}
+
+input:focus, textarea:focus { 
+    border-color: var(--blueAccent);
+}
+
+label {
+    font-size: 1rem;
+    color: var(--pageTextSubtle);
+}
+
+button {
+    padding: 8px 16px;
+    border: 2px solid rgba(0, 0, 0, .15);
+    font-family: var(--bodyFont);
+    font-size: 1rem;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    color: var(--blueAccent);
+    transition: all .15s ease-in-out;
+}
+
+button:hover, button:focus { 
+    border-color: var(--blueAccent);
+    outline: 0;
+}
+
+button:active {
+    background: var(--blueAccent);
+    color: white;
+}
+
 /* mobile layout */
 @media only screen and (max-width: 700px) {
+    html { font-size: 16px }
+
     #headerContainer { 
         grid-template-columns: min-content min-content;
         z-index: 2;
