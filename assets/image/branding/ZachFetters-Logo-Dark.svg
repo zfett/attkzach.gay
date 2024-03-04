@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4800" height="2800" viewBox="0 0 4800 2800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e323c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ZachFetters-Logo-Dark" class="cls-1" d="M3200,1600l1600-200V2800H0V2000l1600-800L0,1400V0H4800V800Z"/>
+</svg>

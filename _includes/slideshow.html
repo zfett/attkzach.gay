@@ -1,0 +1,6 @@
+<div id="slideshowContainer">
+    {% assign artwork = site.data.artwork | limit: 10 %}
+    {% for art in artwork %}
+    <div class="artSlide"><img src="/assets/image/artwork/{{ art.image }}.webp"></div>
+    {% endfor %}
+</div>

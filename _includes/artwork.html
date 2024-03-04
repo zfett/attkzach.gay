@@ -1,0 +1,7 @@
+<div id="artworkContainer">
+    {% for art in site.data.artwork | sort: "year" %}
+    <div class="artworkItem" onclick="showModal('{{ art.image }}')">
+        <img src="/assets/image/artwork/thumb/{{ art.image }}.webp" alt="{{ art.name }}" class="image">
+    </div>
+    {% endfor %}
+</div>

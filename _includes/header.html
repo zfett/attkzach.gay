@@ -1,0 +1,12 @@
+<header id="siteHeader">
+    <div id="headerContainer">
+        <div id="headerBranding"><a href="{{ site.url }}">{{ site.title }}</a></div>
+        <nav id="headerNavigation">
+            {% assign top-level-links = site.pages | where: "top-level", true | sort: "order" %}
+            {% for link in top-level-links %}
+            <a href="{{ link.url }}" class="navigationLink">{{ link.title | upcase }}</a>
+            {% endfor %}
+        </nav>
+        <button id="headerMenuButton" onclick="toggleMenu()">Toggle menu</button>
+    </div>
+</header>

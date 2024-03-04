@@ -1,0 +1,368 @@
+:root {
+    --pageBackground: rgb(225, 230, 235);
+    --headerBackground: rgb(245, 250, 255);
+    --pageTextNormal: rgb(25, 30, 35);
+    --pageTextSubtle: rgb(105, 110, 115);
+    --blueAccent: rgb(30, 50, 60);
+
+    --maxBreakpoint: 1400px;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--pageTextNormal);
+    background: var(--pageBackground);
+}
+
+body {
+    position: relative;
+    display: block;
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    margin: 80px auto 0 auto;
+    z-index: 0;
+}
+
+main {
+    position: relative;
+    display: block;
+    max-width: calc(var(--maxBreakpoint) - 80px);
+    width: calc(100% - 80px);
+    padding: 40px;
+    margin: 0 auto;
+}
+
+main p, li {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 0 0 20px 0;
+}
+
+main li { margin: 0 0 10px 0 }
+
+main p:last-of-type { margin: 0 }
+
+main a {
+    font-weight: bold;
+    color: var(--blueAccent);
+    text-decoration: underline solid var(--pageTextSubtle);
+    text-decoration-thickness: 2px;
+}
+
+main a:hover {
+    background: var(--blueAccent);
+    color: var(--pageBackground);
+    text-decoration-color: var(--blueAccent);
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 20px 0 }
+
+h1, h2 { 
+    font-family: 'Advent Pro', sans-serif;
+    line-height: 1em;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+    color: var(--blueAccent);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--blueAccent);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--pageTextNormal);
+}
+
+h4, h5, h6 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--pageTextSubtle);
+}
+
+/*header*/
+#siteHeader {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background: var(--headerBackground);
+    z-index: 100;
+}
+
+#headerContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 20px;
+    align-items: center;
+    max-width: calc(var(--maxBreakpoint) - 80px);
+    width: calc(100% - 80px);
+    height: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+#headerBranding {
+    position: relative;
+    display: block;
+    width: 69px;
+    height: 40px;
+    background: url("/assets/image/branding/ZachFetters-Logo-Dark.svg") no-repeat center/contain;
+    font-size: 0;
+    color: transparent;
+}
+
+#headerBranding a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#headerNavigation {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+}
+
+#headerNavigation .navigationLink {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 0 0 20px;
+    color: var(--blueAccent);
+    transition: color .15s ease-in-out;
+}
+
+#headerNavigation .navigationLink:hover { color: var(--pageTextSubtle) }
+
+#headerNavigation .navigationLink:first-of-type { margin: 0 }
+
+#headerMenuButton {
+    position: relative;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    background: transparent url("/assets/image/header-menu-button.svg") no-repeat center/contain;
+    cursor: pointer;
+    padding: 0;
+}
+
+#headerMenuButton:hover { background: transparent url("/assets/image/header-menu-button-hover.svg") no-repeat center/contain; }
+
+/*artwork*/
+#artworkContainer {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#artworkContainer .artworkItem {
+    position: relative;
+    display: block;
+    flex: 1 1 1;
+    font-size: 0;
+    transition: opacity .15s ease-in-out;
+    cursor: pointer;
+}
+
+#artworkContainer .artworkItem:hover { opacity: .75 }
+
+#artworkContainer .artworkItem .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+}
+
+.artworkModal {
+    position: fixed;
+    display: block;
+    width: 100vw;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 80px);
+    background: rgba(0, 0, 0, .95);
+    z-index: 10;
+}
+
+#modalContainer {
+    position: relative;
+    display: block;
+    max-width: calc(var(--maxBreakpoint) - 80px);
+    width: calc(100% - 80px);
+    height: calc(100% - 120px);
+    padding: 40px 40px 80px 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: black;
+}
+
+#modalCloseButton {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    right: 40px;
+    font-size: 0;
+    border: 0;
+    background: url("/assets/image/modal-close-button.svg") no-repeat center/contain;
+    cursor: pointer;
+    transition: opacity .15s ease-in-out;
+    z-index: 3;
+    padding: 0;
+}
+
+#modalCloseButton:hover { opacity: .75 }
+
+#modalArtworkContainer {
+    position: absolute;
+    display: block;
+    width: calc(100% - 80px);
+    height: calc(100% - 120px);
+    z-index: 1;
+}
+
+#modalArtworkContainer .image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+
+#modalArtworkContainer .text {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    align-content: center;
+    text-align: center;
+    z-index: 2;
+    color: var(--pageBackground);
+    width: 100%;
+    height: 80px;
+    bottom: -80px;
+    left: 0;
+    user-select: none;
+}
+
+#modalArtworkContainer .text a { color: var(--pageBackground) }
+
+/* slideshow */
+#slideshowContainer {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+#slideshowContainer::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, .25), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    z-index: 2;
+}
+
+#slideshowContainer .artSlide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slideshowContainer .artSlide.active { opacity: 1 }
+
+#slideshowContainer .artSlide img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* mobile layout */
+@media only screen and (max-width: 700px) {
+    #headerContainer { 
+        grid-template-columns: min-content min-content;
+        z-index: 2;
+        justify-content: space-between;
+    }
+    
+    #headerMenuButton { display: block }
+
+    #headerNavigation {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 80px;
+        text-align: center;
+        font-size: 0;
+        background: var(--pageBackground);
+        box-shadow: 0 5080px 0 5000px rgba(0, 0, 0, .5);
+        z-index: -1;
+        opacity: 0;
+        user-select: none;
+        pointer-events: none;
+        transition: opacity .15s ease-in-out;
+    }
+
+    #headerNavigation.active { 
+        opacity: 1;
+        user-select: all;
+        pointer-events: all;
+    }
+
+    #headerNavigation.active::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}

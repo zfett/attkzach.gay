@@ -4,38 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="/favicon.png" type="image/png">
-        <link rel="preload" href="/assets/css/font/roboto/stylesheet.css" as="style" type="text/css">
-        <link rel="stylesheet" href="/assets/css/font/roboto/stylesheet.css" type="text/css">
-        <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="/assets/script/main.js" type="text/javascript" defer></script>
+        {% if page.script %}
+        <script src="/assets/script/{{ page.script }}.js" type="text/javascript" defer></script>
+        {% endif %}
+        <link rel="stylesheet" href="/assets/main.css" type="text/css">
         <title>{{ page.title }} :: {{ site.title }}</title>
         {% include seo.html %}
     </head>
     <body>
-        <aside class="siteSidebar">
-            <h1 class="siteSidebar__siteTitle">{{ site.title }}</h1>
-            <nav class="siteSidebar__mainNavigation">
-                {% assign nav-links = site.pages | where: "top-level", "true" | sort: "order" %}
-                {% for link in nav-links %}
-                {% if link.top-level == true %}
-                {% if link.url == page.url %}
-                <a href="{{ link.url }}" class="mainNavigation__link link--currentPage">{{ link.title | upcase }}</a>
-                {% else %}
-                <a href="{{ link.url }}" class="mainNavigation__link">{{ link.title | upcase }}</a>
-                {% endif %}
-                {% endif %}
-                {% endfor %}
-            </nav>
-        </aside>
-        <main class="siteContent">
-            <div class="siteContent__container">
-                <h2>{{ page.title }}</h2>
-                <hr>
-                {{ content }}
-                <hr>
-                <footer class="siteFooter">
-                    <p>Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> · <a href="/feed.xml">View RSS feed</a> · <a href="/sitemap.xml">View sitemap</a> · Last updated: {{ site.time | date: "%b %d, %Y at %l:%M %p (UTC%z)" }}</p>
-                </footer>
-            </div>
+        {% include header.html %}
+        <main id="pageContentContainer">
+            {{ content }}
         </main>
     </body>
 </html>
