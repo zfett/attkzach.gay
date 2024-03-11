@@ -32,8 +32,21 @@ main {
     display: block;
     max-width: calc(var(--maxBreakpoint) - 80px);
     width: calc(100% - 80px);
-    padding: 40px;
+    padding: 80px 40px;
     margin: 0 auto;
+    z-index: 2;
+}
+
+main img:not(#writeupCover img):not(.artSlide img) {
+    position: relative;
+    display: block;
+    max-width: 800px;
+    min-width: 200px;
+    margin: 40px auto;
+    user-select: none;
+    pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .25);
 }
 
 .hidden {
@@ -187,7 +200,6 @@ h4, h5, h6 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 #artworkContainer .artworkItem {
@@ -202,6 +214,7 @@ h4, h5, h6 {
 #artworkContainer .artworkItem:hover { opacity: .75 }
 
 #artworkContainer .artworkItem .image {
+    margin: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -386,6 +399,29 @@ button:hover, button:focus {
 button:active {
     background: var(--blueAccent);
     color: white;
+}
+
+/*write-up*/
+#writeupCover {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    margin: -80px 0 40px 0;
+    z-index: 1;
+}
+
+#writeupCover img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
 }
 
 /* mobile layout */
