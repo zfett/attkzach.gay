@@ -42,6 +42,7 @@ main img:not(#writeupCover img):not(.artSlide img) {
     display: block;
     max-width: 800px;
     min-width: 200px;
+    width: 100%;
     margin: 40px auto;
     user-select: none;
     pointer-events: none;
