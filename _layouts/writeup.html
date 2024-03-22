@@ -1,8 +1,45 @@
 ---
 layout: default
 ---
+{% for art in site.data.artwork %}
+{% if art.image == page.cover %}
+{% assign data = art %}
+{% endif %}
+{% endfor %}
+{% capture formatted-contributors %}
+{% for person in data.contributors %}
+{% if forloop.last %}
+{{ person }}
+{% else %}
+{{ person }},
+{% endif %}
+{% endfor %}
+{% endcapture %}
+{% capture formatted-tools %}
+{% for tool in data.tools %}
+{% if forloop.last %}
+{{ tool }}
+{% else %}
+{{ tool }},
+{% endif %}
+{% endfor %}
+{% endcapture %}
 <div id="writeupCover">
     <img src="/assets/image/artwork/{{ page.cover }}.webp" alt="{{ page.title }}">
 </div>
+<table id="writeupInfo" cellspacing="0">
+    <tr>
+        <th>Year Created</th>
+        <th>Contributors</th>
+        <th>Tool(s) Used</th>
+        <th>Behance Link</th>
+    </tr>
+    <tr>
+        <td>{{ data.year }}</td>
+        <td>{{ formatted-contributors }}</td>
+        <td>{{ formatted-tools }}</td>
+        <td><a href="{{ data.link }}" target="_blank">View here</a></td>
+    </tr>
+</table>
 <h1 id="writeupTitle">{{ page.title }}</h1>
 {{ content }}

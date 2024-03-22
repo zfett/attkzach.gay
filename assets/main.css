@@ -406,7 +406,7 @@ button:active {
 #writeupCover {
     position: relative;
     display: block;
-    width: 100vw;
+    width: calc(100vw - 16.5px);
     height: calc(100vh - 80px);
     left: 50%;
     transform: translateX(-50%);
@@ -424,6 +424,28 @@ button:active {
     user-select: none;
     pointer-events: none;
 }
+
+#writeupInfo {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin: 40px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#writeupInfo th { 
+    border-bottom: 1px solid #ccc;
+    background: rgba(0, 0, 0, .025);
+}
+
+#writeupInfo td, #writeupInfo th {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+#writeupInfo td:last-of-type, #writeupInfo th:last-of-type { border-right: 0 }
 
 /* mobile layout */
 @media only screen and (max-width: 700px) {

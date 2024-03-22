@@ -1,40 +1,56 @@
 - name:  "INTRAVENOUS"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2024"
   image: "intravenous"
   link:  "https://www.behance.net/gallery/193570591/INTRAVENOUS"
 
 - name:  "Memoriam"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2024"
   image: "memoriam"
   link:  "https://www.behance.net/gallery/190540611/memoriam"
 
 - name:  "Break The Canvas"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2023"
   image: "break-the-canvas"
   link:  "https://www.behance.net/gallery/172919393/Break-The-Canvas"
 
 - name:  "Arcs"
+  tools: ["Adobe Photoshop", "Pencil"]
+  contributors: ["Zachary Fetters", "Brendan Clay", "Michael Allen", "Sydney Hughes"]
   year:  "2022"
   image: "arcs"
   link:  "https://www.behance.net/gallery/146271735/Arcs"
   writeup: "arcs"
 
 - name:  "The Entity"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2021"
   image: "the-entity"
   link:  "https://www.behance.net/gallery/146271545/The-Entity"
 
 - name:  "Analysis"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2021"
   image: "analysis"
   link:  "https://www.behance.net/gallery/146271471/Analysis"
 
 - name:  "Orbs"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2020"
   image: "orbs"
   link:  "https://www.behance.net/gallery/146271387/Orbs"
 
 - name:  "As Above, So Below"
+  tools: ["Adobe Photoshop"]
+  contributors: ["Zachary Fetters"]
   year:  "2020"
   image: "as-above-so-below"
   link:  "https://www.behance.net/gallery/146271283/As-Above-So-Below"
